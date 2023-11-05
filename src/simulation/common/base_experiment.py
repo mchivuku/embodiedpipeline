@@ -10,19 +10,21 @@ from env_wrapper.chickai_env_wrapper import ChickAIEnvWrapper
 import common.logger as logger
 
 
+
+
 class Experiment(abc.ABC):
     def __init__(self, config):
         self.env_config = config["Environment"]
         agent_config = config["Agent"]
         agent_count = config["agent_count"]
-        
+
         run_id = config["run_id"]
         self.mode = config["mode"]
-        
-    
+
+
         self.reward = agent_config["reward"]
         self.rewarded = True if self.reward.lower() == "supervised" else False
-        
+
         self.log_path = config["log_path"]
         self.test_eps = config["test_eps"]
         self.train_eps = config["train_eps"]
