@@ -59,24 +59,25 @@ If users are unfamiliar with how to install a git repository or have never used 
 * `docs`: Contains project documentation 
 * `scripts`: Contains bash scripts to run the respective experiment
 
-## **How to Install**
+## How to Install
 
 In this section, you will pull this repository from Github, open the Unity environment, and build the ChickAI environment as an executable.
 
-### **Codebase Installation**
+### Codebase Installation
 
 1. Install Git and/or Github Desktop. If you install Git, you'll be able to interact with Github through the command line. You can download Git using the directions here: **[https://git-scm.com/downloads](https://git-scm.com/downloads)**. If you install Git Desktop, you can use a GUI to interact with Github. You can install Github Desktop by following the directions here: **[https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/)**. For the following steps, I will provide the command line arguments (but you can use the GUI to find the same options in Github Desktop).
 2. To download the repository, click the Code button on the pipeline_embodied repo. Copy the provided web URL. Then follow the code below to change to directory where you want the repo (denoted here as MY_FOLDER) and then clone the repo.
+3. 
    ```
    cd MY_FOLDER
    git clone URL_YOU_COPIED_GOES_HERE
    ```
-3. Checkout the branch you want to be extra sure that you're using the right branch. 
+4. Checkout the branch you want to be extra sure that you're using the right branch. 
    ```
    cd pipeline_embodied
    git checkout DESIRED_BRANCH
    ```
-4. **(Highly Recommended) **[create and configure a virtual environment](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/ "Link for how to set-up a virtual env")
+5. **(Highly Recommended) ** [create and configure a virtual environment](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/ "Link for how to set-up a virtual env")
    ****steps described below :****
    ```
    conda create -n pipeline_embodied_env python=3.8
@@ -125,7 +126,7 @@ train_eps: NEW_EPISODE_COUNT
 
 If you wish to experiment with custom architectures or a new policy network, this can be done by modifying the agent script (`Simulation/agent.py`**). **`self.model` is the policy network and **`self.encoder`** is the encoder network. Both can be assigned any appropriately sized **`torch.nn.module`**.
 
-## **Experiment Configuration**
+## Experiment Configuration
 
 More information related to details on the experiment can be found on following pages.
 
