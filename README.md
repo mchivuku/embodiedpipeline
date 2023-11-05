@@ -19,7 +19,6 @@ If users are unfamiliar with how to install a git repository or have never used 
 **Following the directory structure of the code.**
 
 ```
-
 ├── data
 │   ├── executables
 ├── docs
