@@ -17,7 +17,6 @@ If users are unfamiliar with how to install a git repository or have never used 
 ## **Directory Structure**
 
 **Following the directory structure of the code.**
-
 ```
 ├── data
 │   ├── executables
